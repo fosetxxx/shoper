@@ -9,6 +9,7 @@ import FirebaseFirestore
 
 
 var readAllDataArray = [[String:Any]]()
+var docIdArray = [String]()
 
 
 // 1 document in verilerini çeker
@@ -30,7 +31,8 @@ func readData() {
 
 // Tüm document lerin verileri [[String:Any]] şeklinde çeker.
 func readAllData() {
-    
+    readAllDataArray.removeAll()
+    docIdArray.removeAll()
     
     let db = Firestore.firestore()
     let collectionRef = db.collection("Buyers")
@@ -41,9 +43,14 @@ func readAllData() {
         } else {
             for document in querySnapshot!.documents {
                 let data = document.data()
+                let docIds = document.documentID
                 readAllDataArray.append(data)
+                docIdArray.append(docIds)
+                
             }
+            //print(readAllDataArray)
+            print(docIdArray)
         }
-        print(readAllDataArray[0])
+        
     }
 }

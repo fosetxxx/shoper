@@ -9,12 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     
+   
+    @State private var getLabelName = ""
+    @State private var getLabelPhone = ""
+    
+    
     var body: some View {
-        VStack{
-            addData()
+        VStack {
+            TextField("search name", text: $getLabelName)
+            TextField("search phone", text: $getLabelPhone)
             Button("bas") {
-                readAllData()
+                searchData(labelName: getLabelName, labelPhone: getLabelPhone)
                 
+                getLabelName = ""
+                getLabelPhone = ""
+            }
+            Button("Print") {
+                for i in searchDataArray{
+                    print(i)
+                }
             }
         }
 
