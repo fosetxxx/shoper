@@ -29,7 +29,7 @@ func readData() {
 }
 
 
-// Tüm document lerin verileri [[String:Any]] şeklinde çeker.
+// Tüm document lerin verileri [[String:Any]] şeklinde ve document id lerini array şeklinde çeker.
 func readAllData() {
     readAllDataArray.removeAll()
     docIdArray.removeAll()

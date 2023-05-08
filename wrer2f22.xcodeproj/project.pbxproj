@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60822DC2A095995009738EA /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = D60822DB2A095995009738EA /* URLImage */; };
+		D60822DE2A095995009738EA /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = D60822DD2A095995009738EA /* URLImageStore */; };
 		D61B12082A041B3D00857CDB /* AddData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B12072A041B3D00857CDB /* AddData.swift */; };
 		D6B9C4762A082C0E002E8003 /* ReadStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9C4752A082C0E002E8003 /* ReadStorage.swift */; };
 		D6B9C4792A082E97002E8003 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D6B9C4782A082E97002E8003 /* Kingfisher */; };
@@ -71,12 +73,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D647E42A0057C300FA45C8 /* FirebaseAnalyticsSwift in Frameworks */,
+				D60822DC2A095995009738EA /* URLImage in Frameworks */,
 				D6D648002A0057C300FA45C8 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				D6D647FA2A0057C300FA45C8 /* FirebaseFunctions in Frameworks */,
 				D6D648022A0057C300FA45C8 /* FirebaseInstallations in Frameworks */,
 				D6D647E02A0057C300FA45C8 /* FirebaseAnalytics in Frameworks */,
 				D6D6480E2A0057C300FA45C8 /* FirebaseStorage in Frameworks */,
 				D6D647E22A0057C300FA45C8 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				D60822DE2A095995009738EA /* URLImageStore in Frameworks */,
 				D6D647F02A0057C300FA45C8 /* FirebaseDatabaseSwift in Frameworks */,
 				D6B9C4792A082E97002E8003 /* Kingfisher in Frameworks */,
 				D6D647E82A0057C300FA45C8 /* FirebaseAppCheck in Frameworks */,
@@ -205,6 +209,8 @@
 				D6D6480D2A0057C300FA45C8 /* FirebaseStorage */,
 				D6D6480F2A0057C300FA45C8 /* FirebaseStorageCombine-Community */,
 				D6B9C4782A082E97002E8003 /* Kingfisher */,
+				D60822DB2A095995009738EA /* URLImage */,
+				D60822DD2A095995009738EA /* URLImageStore */,
 			);
 			productName = wrer2f22;
 			productReference = D6D647CB2A0056BB00FA45C8 /* wrer2f22.app */;
@@ -237,6 +243,7 @@
 			packageReferences = (
 				D6D647DE2A0057C300FA45C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				D6B9C4772A082E97002E8003 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D60822DA2A095994009738EA /* XCRemoteSwiftPackageReference "url-image" */,
 			);
 			productRefGroup = D6D647CC2A0056BB00FA45C8 /* Products */;
 			projectDirPath = "";
@@ -477,6 +484,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D60822DA2A095994009738EA /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		D6B9C4772A082E97002E8003 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -496,6 +511,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D60822DB2A095995009738EA /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D60822DA2A095994009738EA /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		D60822DD2A095995009738EA /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D60822DA2A095994009738EA /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
 		D6B9C4782A082E97002E8003 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D6B9C4772A082E97002E8003 /* XCRemoteSwiftPackageReference "Kingfisher" */;
