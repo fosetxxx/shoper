@@ -12,10 +12,16 @@ import URLImage
 
 
 struct ContentView: View {
-    
+    @State var obj = ""
     var body: some View {
         VStack {
-              
+            if (AuthSection().user != nil) == true {
+                Text("Dolu")
+            } else {
+                Text("Boş")
+            }
+        }.onAppear {
+            AuthSection().checkCurrentUser()
         }
     }
 }

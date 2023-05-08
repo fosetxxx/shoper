@@ -11,16 +11,15 @@ import SwiftUI
 
 class AuthSection {
     
-    @State var emailText: String
-    @State var passText: String
+    @State var emailText = String()
+    @State var passText = String()
+    @State var user: User?
+    @State var isUserTrue = false
     
-    init(emailText: String, passText: String) {
-        self.emailText = emailText
-        self.passText = passText
-    }
+
     
     // Kullanıcı oluşturma
-    func signUp() {
+    func signUp(emailText: String, passText: String) {
         if emailText == "" && passText == "" {
             Alert().showAlert(title: "Error", message: "Need email or password!")
         } else {
@@ -36,7 +35,7 @@ class AuthSection {
     }
     
     // Mevcut kullanıcı ile giriş yapma
-    func singIn() {
+    func singIn(emailText: String, passText: String) {
         if emailText == "" && passText == "" {
             Alert().showAlert(title: "Error", message: "Need email or password!")
         } else {
@@ -52,11 +51,11 @@ class AuthSection {
     
     // Mevcut kullanıcı hesabı açık mı yoksa çıkış yapılmış mı kontrolü
     func checkCurrentUser() {
-        let currentUser = Auth.auth().currentUser
-        if currentUser != nil {
-            Alert().showAlert(title: "Success", message: "\(String(describing: currentUser)) kullanıcısı ile devam ediliyor.")
-        } else {
-            Alert().showAlert(title: "!!!", message: "Must login")
+        if let currentUser = Auth.auth().currentUser {
+            self.user = currentUser
+            if (self.user != nil) {
+                isUserTrue = true
+            }
         }
     }
     
