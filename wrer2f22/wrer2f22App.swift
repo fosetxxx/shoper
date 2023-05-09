@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 import FirebaseCore
 
 
@@ -14,10 +15,19 @@ class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     FirebaseApp.configure()
-
-
+   
     return true
   }
+}
+
+class AuthViewModel: ObservableObject {
+    @Published var user: User?
+
+    init() {
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            self.user = user
+            }
+    }
 }
 
 @main
