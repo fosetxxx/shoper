@@ -4,6 +4,7 @@
 //
 //  Created by Semih Karahan on 4.05.2023.
 //
+/*
 import SwiftUI
 import FirebaseStorage
 import FirebaseFirestore
@@ -214,3 +215,6 @@ struct ActivityIndicator: UIViewRepresentable {
     }
     func updateUIView(_ uiView: UIActivityIndicatorView, context: Context) {}
 }
+
+
+*/

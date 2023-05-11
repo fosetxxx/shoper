@@ -18,9 +18,22 @@ struct ContentView: View {
     @State private var emailText = ""
     @State private var passText = ""
     
+    
+    
     var body: some View {
         VStack {
             
+            addDatabase().onAppear {
+                AuthSection().singIn(emailText: "a@a.com", passText: "aaaaaa")
+            }
+            Button("Get Datasasdas") {
+                readFirstCollections()
+            }
+
+                
+            
+            
+            /*
             TextField("eposta", text: $emailText)
             TextField("eposta", text: $passText)
             Button("Login") {
@@ -35,6 +48,7 @@ struct ContentView: View {
             } else {
                 Text("Merhaba")
             }
+            */
             /*
             if (AuthSection().user != nil) == true {
                 Text("Dolu")

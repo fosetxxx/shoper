@@ -4,8 +4,9 @@
 //
 //  Created by Semih Karahan on 5.05.2023.
 //
-
+/*
 import FirebaseFirestore
+import FirebaseAuth
 
 
 var readAllDataArray = [[String:Any]]()
@@ -35,7 +36,7 @@ func readAllData() {
     docIdArray.removeAll()
     
     let db = Firestore.firestore()
-    let collectionRef = db.collection("Buyers")
+    let collectionRef = db.collection("\((Auth.auth().currentUser?.email)!)")
 
     collectionRef.getDocuments { (querySnapshot, error) in
         if let error = error {
@@ -54,3 +55,4 @@ func readAllData() {
         
     }
 }
+*/
