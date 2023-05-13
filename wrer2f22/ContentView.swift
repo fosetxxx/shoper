@@ -26,9 +26,19 @@ struct ContentView: View {
             addDatabase().onAppear {
                 AuthSection().singIn(emailText: "a@a.com", passText: "aaaaaa")
             }
-            Button("Get Datasasdas") {
-                readFirstCollections()
+            Button("Customers To Array") {
+                getCustomerArray()
+                
             }
+            Button("Get Datasasdas") {
+                readFirstCollections(customerName: readGlobalVariables.customerArray[3])
+                
+            }
+            Button("Get string") {
+                print(readGlobalVariables.customerDetailArray[0]["name"] as! String)
+                print(type(of: readGlobalVariables.customerDetailArray[0]["name"] as! String))
+            }
+
 
                 
             
