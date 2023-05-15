@@ -23,6 +23,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
+            
+            
+            Text("Her haben")
+            
+            
+            /*
             addDatabase().onAppear {
                 AuthSection().singIn(emailText: "a@a.com", passText: "aaaaaa")
             }
@@ -37,7 +43,7 @@ struct ContentView: View {
             Button("Get string") {
                 print(readGlobalVariables.customerDetailArray[0]["name"] as! String)
                 print(type(of: readGlobalVariables.customerDetailArray[0]["name"] as! String))
-            }
+            }*/
 
 
                 
@@ -66,9 +72,7 @@ struct ContentView: View {
                 Text("Boş")
             }
              */
-        }//.onAppear {
-         //   AuthSection().checkCurrentUser()
-        //}
+        }
     }
 }
 

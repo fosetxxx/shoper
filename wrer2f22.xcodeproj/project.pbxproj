@@ -10,6 +10,7 @@
 		D60822DC2A095995009738EA /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = D60822DB2A095995009738EA /* URLImage */; };
 		D60822DE2A095995009738EA /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = D60822DD2A095995009738EA /* URLImageStore */; };
 		D61B12082A041B3D00857CDB /* AddData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61B12072A041B3D00857CDB /* AddData.swift */; };
+		D64778AF2A111F8D00A21029 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64778AE2A111F8D00A21029 /* MainPage.swift */; };
 		D6B9C4762A082C0E002E8003 /* ReadStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9C4752A082C0E002E8003 /* ReadStorage.swift */; };
 		D6B9C4792A082E97002E8003 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D6B9C4782A082E97002E8003 /* Kingfisher */; };
 		D6B9C47B2A0843CB002E8003 /* SearchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9C47A2A0843CB002E8003 /* SearchButton.swift */; };
@@ -54,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		D61B12072A041B3D00857CDB /* AddData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddData.swift; sourceTree = "<group>"; };
+		D64778AE2A111F8D00A21029 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		D6B9C4752A082C0E002E8003 /* ReadStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadStorage.swift; sourceTree = "<group>"; };
 		D6B9C47A2A0843CB002E8003 /* SearchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchButton.swift; sourceTree = "<group>"; };
 		D6C292362A0567A500700AE4 /* ReadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadData.swift; sourceTree = "<group>"; };
@@ -138,14 +140,15 @@
 		D6D647CD2A0056BB00FA45C8 /* wrer2f22 */ = {
 			isa = PBXGroup;
 			children = (
-				D6F7DD792A0C228000E1B2F4 /* Firebase Section */,
 				D61B12092A04419400857CDB /* Bin */,
 				D6D647CE2A0056BB00FA45C8 /* wrer2f22App.swift */,
 				D6D647D02A0056BB00FA45C8 /* ContentView.swift */,
+				D64778AE2A111F8D00A21029 /* MainPage.swift */,
 				D6D648182A00583200FA45C8 /* Alert.swift */,
-				D6D648112A00582300FA45C8 /* Firebase */,
+				D6F7DD792A0C228000E1B2F4 /* Firebase Section */,
 				D6D647D22A0056BC00FA45C8 /* Assets.xcassets */,
 				D6D647DC2A0056E800FA45C8 /* GoogleService-Info.plist */,
+				D6D648112A00582300FA45C8 /* Firebase */,
 				D6D647D42A0056BC00FA45C8 /* Preview Content */,
 			);
 			path = wrer2f22;
@@ -291,6 +294,7 @@
 				D61B12082A041B3D00857CDB /* AddData.swift in Sources */,
 				D6B9C4762A082C0E002E8003 /* ReadStorage.swift in Sources */,
 				D6D647D12A0056BB00FA45C8 /* ContentView.swift in Sources */,
+				D64778AF2A111F8D00A21029 /* MainPage.swift in Sources */,
 				D6D647CF2A0056BB00FA45C8 /* wrer2f22App.swift in Sources */,
 				D6B9C47B2A0843CB002E8003 /* SearchButton.swift in Sources */,
 				D6D648152A00582300FA45C8 /* Storage.swift in Sources */,

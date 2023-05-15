@@ -15,10 +15,6 @@ struct readGlobalVariables {
     static var customerShoppingDetailArray = [[String: Any]]()
 }
 
-
-
-
-
 func getCustomerArray(){
     readGlobalVariables.customerArray.removeAll()
     let db = Firestore.firestore()
